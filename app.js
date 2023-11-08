@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express()
-const PORT = 8008;
+const PORT = process.env.PORT || 8008;
 
 app.use(express.static(__dirname + '/'))
 
